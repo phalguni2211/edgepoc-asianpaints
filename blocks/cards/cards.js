@@ -40,7 +40,7 @@ if (!cardsNav) {
  
   const cardsList = document.querySelector('.cards.custom-tut.block ul');
   const cards = document.querySelectorAll('.cards.custom-tut.block ul li');
-  const cardWidth = cards[0].clientWidth ? cards[0].clientWidth + 16 :  364; // Including margin
+  const cardWidth = 364; // Including margin
   const visibleCards = 2;
   const maxIndex = cards.length;
   let cardIndex = 0;
