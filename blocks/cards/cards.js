@@ -102,4 +102,4 @@ if (!cardsNav) {
  
   // Initial call to highlight the first card
   updateCardPosition();
-}
+}}
