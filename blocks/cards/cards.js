@@ -2,6 +2,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
   /* change to ul, li */
+  let cardsNav = document.querySelector('.cards-nav');
   const cardsContainer = document.querySelector('.cards.custom-tut.block');
   cardsNav = document.createElement('div');
   cardsNav.className = 'cards-nav';
