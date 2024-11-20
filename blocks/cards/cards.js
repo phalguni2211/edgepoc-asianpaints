@@ -2,7 +2,9 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
   /* change to ul, li */
-  let cardsNav = document.querySelector('.cards-nav');
+ let cardsNav = document.querySelector('.cards-nav');
+if (!cardsNav) {
+  // Create and insert the arrows if they do not exist
   const cardsContainer = document.querySelector('.cards.custom-tut.block');
   cardsNav = document.createElement('div');
   cardsNav.className = 'cards-nav';
@@ -86,6 +88,7 @@ export default function decorate(block) {
  
   // Initial call to highlight the first card
   updateCardPosition();
+}
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
